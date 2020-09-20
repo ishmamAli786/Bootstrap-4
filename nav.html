@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        .nav{
+            background:darkcyan;
+        }
+        .nav-link{
+            color:white;
+        }
+        .nav-link:hover,.nav-link.active{
+            color:white;
+            background: sandybrown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mb-5">
+        <h2 class="py-3 text-center">Bootstrap Navs Classes</h2>
+        <div class="row py-3">
+            <div class="col">
+                <ul class="nav justify-content-end nav-pills nav-justified">
+                    <li class="nav-item">
+                        <a href="" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link disabled">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row py-5">
+            <div class="col">
+                <nav class="nav">
+                    <a href="nav-link" class="nav-link">Home</a>
+                    <a href="nav-link" class="nav-link active">About Us</a>
+                    <a href="nav-link" class="nav-link">Portfolio</a>
+                    <a href="nav-link" class="nav-link disabled">Gallery</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
