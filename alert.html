@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Classes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+<script>
+    $(function(){
+        $('#closeBtn').click(function(){
+            $('#redBox').alert('close')
+        })
+        $('#redBox').on('close.bs.alert',function(){
+            alert('close');
+        })
+        $('#redBox').on('closed.bs.alert',function(){
+            alert('closed');
+        })
+    })
+</script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="py-3 text-center">Bootstrap Alert</h1>
+        <div class="row py-3 justify-content-center">
+            <div class="col-md-7">
+                <div class="alert alert-primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, laborum?
+                    <button class="close" data-dismiss="alert">X</button>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="alert alert-success">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, laborum?
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div id="redBox" class="alert alert-danger">
+                    <h3 class="alert-heading">Heading Goes Here</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi consequatur voluptatibus dolorum veniam reiciendis doloremque adipisci nam aliquam assumenda modi quod corporis rem ratione ad magni consequuntur est esse magnam, at vero aut. Ullam ipsa, nulla, dolore esse odio tempore reprehenderit sunt delectus ipsum accusamus consequuntur, accusantium molestias autem animi? Minus dolorum tempore aliquam. Hic architecto corporis qui, praesentium tempore eius consequatur reiciendis omnis maiores! Voluptatum quae aspernatur, eligendi perferendis fugit culpa sequi dicta nemo soluta vitae ad explicabo fuga alias dolore, voluptates qui commodi. Repellendus sunt fugit placeat ea, alias asperiores aperiam perspiciatis? Dignissimos beatae laboriosam cupiditate maiores molestias!
+                    </p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem possimus, ipsam amet dolorum libero iure molestias officiis debitis. Magnam, fugit. Molestias ducimus dolorum, quis, porro recusandae modi unde commodi repudiandae earum quidem suscipit vitae quam iste eos! Commodi dolores aliquam minima asperiores at provident animi fuga pariatur nihil mollitia quae officia rem dolore maiores nesciunt ab eveniet corrupti vitae molestiae, quo dolorem quos aperiam! Eum quos doloremque iste ipsum exercitationem ipsa dolores soluta! Recusandae numquam, odit hic eveniet corporis dolorum debitis itaque. Facere dolores aliquam ad provident inventore deleniti sint nemo excepturi, enim ipsum numquam nobis aliquid. Hic facere sed autem molestiae, et beatae temporibus? Iure modi ullam eveniet, vitae natus architecto tempora in deserunt corporis rerum eaque velit laboriosam aspernatur deleniti animi blanditiis sapiente! Consequatur animi, qui perspiciatis esse vero temporibus eveniet dolorem consectetur. Eum facilis fugit ducimus dolor voluptas, eligendi corrupti accusamus laudantium enim, alias nesciunt minima?</p>
+                </div>
+            </div>
+        </div>
+        <button id="closeBtn">Close</button>
+    </div>
+</body>
+</html>
