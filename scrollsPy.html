@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollsPy Classes And Plugin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+<style>
+    body{
+        position:relative;
+    }
+    #section1{padding-top:60px;height:500px;color:#fff;background-color:#1e88e5;}
+    #section2{padding-top:60px;height:500px;color:#fff;background-color:#b73ab7;}
+    #section1{padding-top:60px;height:500px;color:#fff;background-color:#ff9800;}
+    #section1{padding-top:60px;height:500px;color:#fff;background-color:#00bcd4;}
+    #section1{padding-top:60px;height:500px;color:#fff;background-color:#009688;}
+</style>
+</head>
+<body data-spy="scroll" data-target="#myNavbar">
+    <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand">WebsiteName</a>
+        <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-toggle">
+            <span class="navbar-toggle-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggle">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#section1" class="nav-link">Section 1</a></li>
+                <li class="nav-item"><a href="#section2" class="nav-link">Section 2</a></li>
+                <li class="nav-item"><a href="#section3" class="nav-link">Section 3</a></li>
+                <li class="nav-item dropdown">
+                <a href="#section4" class="nav-link dropdown-toggle" data-toggle="dropdown">section 4
+                <span class="caret"></span></a>
+                <div class="dropdown-menu">
+                    <a href="#section4.1" class="dropdown-item">Section 4.1</a>
+                    <a href="#section4.2" class="dropdown-item">Section 4.2</a>
+
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="section1" class="container-fluid">
+        <h1>Section 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quis architecto assumenda ab at amet ipsum, maxime rerum eos numquam nobis cum. Nesciunt accusantium quidem ipsam vitae a nostrum esse explicabo reiciendis, illo, nemo placeat iste expedita harum, porro molestiae natus! At non magni eveniet, itaque ea corrupti tempora! Veniam suscipit quae, obcaecati consequatur qui libero dolorum molestias perspiciatis voluptate eveniet doloribus sed eius totam voluptatum! Libero accusamus, rem ratione eos ipsum commodi ut ipsa vero quasi eum ullam eligendi cupiditate nulla repellat cumque aspernatur odio. Maiores sed, nostrum accusamus culpa quae voluptas veniam neque aperiam, quis quisquam aliquam consectetur.</p>
+    </div>
+    <div id="section2" class="container-fluid">
+        <h1>Section 1</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quis architecto assumenda ab at amet ipsum, maxime rerum eos numquam nobis cum. Nesciunt accusantium quidem ipsam vitae a nostrum esse explicabo reiciendis, illo, nemo placeat iste expedita harum, porro molestiae natus! At non magni eveniet, itaque ea corrupti tempora! Veniam suscipit quae, obcaecati consequatur qui libero dolorum molestias perspiciatis voluptate eveniet doloribus sed eius totam voluptatum! Libero accusamus, rem ratione eos ipsum commodi ut ipsa vero quasi eum ullam eligendi cupiditate nulla repellat cumque aspernatur odio. Maiores sed, nostrum accusamus culpa quae voluptas veniam neque aperiam, quis quisquam aliquam consectetur.</p>
+        <div id="section1" class="container-fluid">
+            <h1>Section 3</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quis architecto assumenda ab at amet ipsum, maxime rerum eos numquam nobis cum. Nesciunt accusantium quidem ipsam vitae a nostrum esse explicabo reiciendis, illo, nemo placeat iste expedita harum, porro molestiae natus! At non magni eveniet, itaque ea corrupti tempora! Veniam suscipit quae, obcaecati consequatur qui libero dolorum molestias perspiciatis voluptate eveniet doloribus sed eius totam voluptatum! Libero accusamus, rem ratione eos ipsum commodi ut ipsa vero quasi eum ullam eligendi cupiditate nulla repellat cumque aspernatur odio. Maiores sed, nostrum accusamus culpa quae voluptas veniam neque aperiam, quis quisquam aliquam consectetur.</p>
+        </div>
+        <div id="section4" class="container-fluid">
+            <h1>Section 1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quis architecto assumenda ab at amet ipsum, maxime rerum eos numquam nobis cum. Nesciunt accusantium quidem ipsam vitae a nostrum esse explicabo reiciendis, illo, nemo placeat iste expedita harum, porro molestiae natus! At non magni eveniet, itaque ea corrupti tempora! Veniam suscipit quae, obcaecati consequatur qui libero dolorum molestias perspiciatis voluptate eveniet doloribus sed eius totam voluptatum! Libero accusamus, rem ratione eos ipsum commodi ut ipsa vero quasi eum ullam eligendi cupiditate nulla repellat cumque aspernatur odio. Maiores sed, nostrum accusamus culpa quae voluptas veniam neque aperiam, quis quisquam aliquam consectetur.</p>
+        </div>
+        <div id="section4.1" class="container-fluid">
+            <h1>Section 1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quis architecto assumenda ab at amet ipsum, maxime rerum eos numquam nobis cum. Nesciunt accusantium quidem ipsam vitae a nostrum esse explicabo reiciendis, illo, nemo placeat iste expedita harum, porro molestiae natus! At non magni eveniet, itaque ea corrupti tempora! Veniam suscipit quae, obcaecati consequatur qui libero dolorum molestias perspiciatis voluptate eveniet doloribus sed eius totam voluptatum! Libero accusamus, rem ratione eos ipsum commodi ut ipsa vero quasi eum ullam eligendi cupiditate nulla repellat cumque aspernatur odio. Maiores sed, nostrum accusamus culpa quae voluptas veniam neque aperiam, quis quisquam aliquam consectetur.</p>
+        </div>
+        <div id="section4.2" class="container-fluid">
+            <h1>Section 1</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quis architecto assumenda ab at amet ipsum, maxime rerum eos numquam nobis cum. Nesciunt accusantium quidem ipsam vitae a nostrum esse explicabo reiciendis, illo, nemo placeat iste expedita harum, porro molestiae natus! At non magni eveniet, itaque ea corrupti tempora! Veniam suscipit quae, obcaecati consequatur qui libero dolorum molestias perspiciatis voluptate eveniet doloribus sed eius totam voluptatum! Libero accusamus, rem ratione eos ipsum commodi ut ipsa vero quasi eum ullam eligendi cupiditate nulla repellat cumque aspernatur odio. Maiores sed, nostrum accusamus culpa quae voluptas veniam neque aperiam, quis quisquam aliquam consectetur.</p>
+        </div>
+    </div>
+</body>
+</html>
