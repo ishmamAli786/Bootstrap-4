@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousal Classes And Plugin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+
+
+
+<style>
+    .carousel-inner h5,.carousel-inner p{
+        color:black;
+        /* background:white; */
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="py-3 text-center">BootStrap Carousal Classes</h2>
+        <div class="row py-3">
+            <div class="col">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1" ></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active"  data-interval="1000">
+                            <img src="img2.jpg" alt="image" classs="d-block w-100">
+                            <div class="carousel-caption">
+                                <h5>First Slide Label</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, architecto?</p>
+                            </div>
+
+                        </div>
+                        <div class="carousel-item" data-interval="1000">
+                            <img src="img2.jpg" alt="image" classs="d-block w-100">
+                            <div class="carousel-caption">
+                                <h5>Second Slide Label</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, architecto?</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="1000">
+                            <img src="img2.jpg" alt="image" classs="d-block w-100" >
+                            <div class="carousel-caption">
+                                <h5>Third Slide Label</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, architecto?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#myCarousel" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#myCarousel" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
